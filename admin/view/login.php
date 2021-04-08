@@ -1,5 +1,3 @@
-<?php include('./util/valid_admin.php'); ?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -37,3 +35,23 @@
             </div>
         </nav>
     </header>
+    <main class="container">
+        <section class="mt-2 mb-2">
+            <p class="text-warning"> <?php echo $login_message ?> </p>
+            <form action="../admin/index.php" method="POST">
+                <label for="username">
+                    Username:
+                </label>
+                <input class="form-control m-1" type="text" name="username">
+                <label for="password">
+                    Password:
+                </label>
+                <input class="form-control m-1" type="text" name="password">
+                <input type="hidden" name="action" value="login">
+                <button class="btn btn-primary m-1">Sign In</button>
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>

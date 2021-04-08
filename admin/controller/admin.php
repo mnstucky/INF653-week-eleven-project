@@ -7,11 +7,14 @@ switch ($action) {
             $_SESSION['is_valid_admin'] = true;
             header('Location: .?action=list_vehicles');
         } else {
-            $login_message = 'You must login to view this page';
-            include('../view/login.php');
+            $login_message = 'Incorrect Login / Login Required';
+            include('./view/login.php');
         }
         break;
     case 'show_login':
+        if (!isset($login_message)) {
+            $login_message = 'Please fill in your credentials to login.';
+        }
         include('./view/login.php');
         break;
     case 'show_register':

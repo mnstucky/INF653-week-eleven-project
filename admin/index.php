@@ -86,8 +86,10 @@ switch ($action) {
         include('./controller/admin.php');
         break;
     case 'logout':
+        include('./controller/admin.php');
         break;
     case 'show_login':
+        include('./controller/admin.php');
         break;
     case 'show_register':
         include('./controller/admin.php');
