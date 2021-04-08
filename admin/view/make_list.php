@@ -1,4 +1,6 @@
-<?php require('header.php'); ?> <main class="container">
+<?php require('header.php'); ?> 
+
+<main class="container">
     <section class="mt-2 mb-2">
         <h2>Vehicle Make List</h2>
         <table class="table">
@@ -37,11 +39,6 @@
             <button class="btn btn-primary m-1">Add Make</button>
         </form>
         <a href="../admin/index.php?action=list_vehicles">View Full Vehicle List</a>
-    </section>
-    <section>
-        <p><a href="index.php?action=show_add_vehicle_form">Click here</a> to add a vehicle</p>
-        <p><a href="index.php?action=show_types_form">View/Edit Vehicle Types</a></p>
-        <p><a href="index.php?action=show_classes_form">View/Edit Vehicle Classes</a></p>
     </section>
 
 </main>

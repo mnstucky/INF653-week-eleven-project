@@ -4,6 +4,9 @@ require('../model/vehicle_db.php');
 require('../model/make_db.php');
 require('../model/type_db.php');
 require('../model/class_db.php');
+require('../model/admin_db.php');
+
+session_start();
 
 $makes = get_makes();
 $types = get_types();
@@ -77,4 +80,23 @@ switch ($action) {
         $class_id_to_delete = filter_input(INPUT_POST, 'class_id', FILTER_VALIDATE_INT);
         include('./controller/classes.php');
         break;
+    case 'login':
+        $username = filter_input(INPUT_POST, 'username');
+        $password = filter_input(INPUT_POST, 'password');
+        include('./controller/admin.php');
+        break;
+    case 'logout':
+        break;
+    case 'show_login':
+        break;
+    case 'show_register':
+        include('./controller/admin.php');
+        break;
+    case 'register':
+        $username = filter_input(INPUT_POST, 'username');
+        $password = filter_input(INPUT_POST, 'password');
+        $confirm_password = filter_input(INPUT_POST, 'confirm_password');
+        include('./controller/admin.php');
+        break;
+
 }
