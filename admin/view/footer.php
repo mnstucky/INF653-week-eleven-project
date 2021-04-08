@@ -5,6 +5,7 @@
         <p><a href="index.php?action=show_types_form">View/Edit Vehicle Types</a></p>
         <p><a href="index.php?action=show_classes_form">View/Edit Vehicle Classes</a></p>
         <p><a href="index.php?action=show_register">Register New Admin User</a></p>
+        <p><a href="index.php?action=logout">Logout</a></p>
     </section>
     <p class="text-center">&copy; <?php echo date("Y"); ?> Zippy Used Autos</p>
 </footer>
