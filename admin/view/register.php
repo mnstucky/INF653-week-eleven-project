@@ -3,9 +3,11 @@
 <main class="container">
     <section class="mt-2 mb-2">
         <h2>Register a New Admin User</h2>
-        <?php foreach ($errors as $error) { ?>
-            <p class="text-danger"> <?php echo $error ?> </p>
-        <?php } ?>
+        <?php if (!empty($errors)) {
+            foreach ($errors as $error) { ?>
+                <p class="text-danger"> <?php echo $error ?> </p>
+        <?php }
+        } ?>
         <form action="../admin/index.php" method="POST">
             <label for="username">
                 Username:

@@ -38,7 +38,6 @@
             <input type="hidden" name="action" value="add_class">
             <button class="btn btn-primary m-1">Add Class</button>
         </form>
-        <a href="../admin/index.php?action=list_vehicles">View Full Vehicle List</a>
     </section>
 
 </main>

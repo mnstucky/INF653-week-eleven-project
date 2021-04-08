@@ -38,7 +38,6 @@
             <input type="hidden" name="action" value="add_make">
             <button class="btn btn-primary m-1">Add Make</button>
         </form>
-        <a href="../admin/index.php?action=list_vehicles">View Full Vehicle List</a>
     </section>
 
 </main>
